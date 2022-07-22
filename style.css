@@ -1,0 +1,106 @@
+/* Body */
+
+body {
+	background-color:#000;
+	font:normal .9em Tahoma,sans-serif;
+	text-align: left;
+}
+
+/* Wireframing (development purposes only) */
+/*
+div {
+	border:1px solid #F00;
+}
+*/
+/* -----------------
+    Layout Elements
+   ----------------- */
+
+#container {
+	margin: 0 auto;
+	width: 466px;
+	background-color:#000;
+} 
+
+#header {
+	background:#000 url(corpo.gif) left bottom no-repeat;
+	height: 195px;
+}
+
+#links {
+	margin-left: 16px;
+	border: 1px solid black;
+	float: left;
+	display: inline;
+	color:#9B9A9A;
+}
+
+#content {
+	margin-left: 78px;
+	border: 1px solid black;
+}
+
+#content p{
+	margin-top:0px;
+	color:#9B9A9A;
+}
+
+#content h3 {
+	color:#920200;
+	margin:0px;
+	padding:0px;
+	
+}
+
+#content h4 {
+	color:#e7e7e7;
+	margin:0px;
+	padding:0px;
+	
+}
+
+#links ul {
+	list-style: none;
+	margin: 0px;
+	text-align: right;
+	padding: 0;
+}
+
+#links li {
+	padding: 0;
+	margin: 0px;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+#links li a:link, #links li a:visited {
+	text-decoration: none;	
+	font-weight: normal;
+	color:#9B9A9A;
+}
+
+#links li a:hover {
+	text-decoration: none;
+	color:#920200;
+	text-shadow:0px 0px 30px #920200;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+#content  a:link, #content  a:visited {
+	text-decoration: none;	
+	font-weight: normal;
+	color:#920200;
+}
+
+#footer {
+	color:#920200;
+	text-align: right;
+	clear:both;
+	font-size:.8em;
+	padding-right: 20px;
+}
