@@ -1,0 +1,17 @@
+GAMEPLAY
+
+* Agora é possível trancar e destrancar portas com o anel na mão, tornando mais prático utilizar anéis roubados.
+* Portas opacas de metal agora podem ser trancadas.
+* Agora temos o Runechat, em sua versão experimental, dependendo dos resultados tornará-se uma adição permanente ao jogo.
+
+MISCELÂNEA
+
+* Os aspectos da lista do barão agora serão aplicados corretamente.
+* Prostituta e barão agora ganham cromossomos quando completam seus objetivos.
+* Launcher para o jogo sendo feito (WIP)
+* Estadobolas adcionadas ao OOC.
+
+MAPA
+
+
+*O bordel agora utiliza cartões para trancar e destrancar as portas dos quartos.
