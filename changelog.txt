@@ -1,4 +1,4 @@
-GAMEPLAY
+GAMEPLAY \n 
 
 * Agora é possível trancar e destrancar portas com o anel na mão, tornando mais prático utilizar anéis roubados.
 * Portas opacas de metal agora podem ser trancadas.
