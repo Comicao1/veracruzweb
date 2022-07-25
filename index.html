@@ -8,6 +8,7 @@
       <meta content="http://veracruz.rf.gd" property="og:url" />
       <meta content="http://veracruz.rf.gd/corpo.gif" property="og:image" />
       <meta content="#eb4034" data-react-helmet="true" name="theme-color" />
+      <link rel="icon" type="image/x-icon" href="favicon.png">
    </head>
    <body>
         <div id="container">
@@ -34,8 +35,7 @@
                 </div>
                 <div id="content">
                         <h3>Changelog</h3>
-                        <h4>Beta 0.1</h4>
-                        <p><embed type="text/html" src="beta01.html" width="450" height="250"></p>
+                        <p id="output"></p>
                 </div>
                 <div id="footer">
                         <p>©2022 VeraCruz Team</p>
@@ -43,5 +43,23 @@
         </div>
    
 
+<script>
+    function changeHtml(data){
+        var str;
+        str = this.responseText;
+        str = str.replace(/(\r\n|\n|\r)/gm,"<br>")
+        document.getElementById('output').innerHTML = str;
+    }
+    
+    async function reqData(){
+        const xhr = new XMLHttpRequest()
+        xhr.addEventListener('load', changeHtml)
+        xhr.open('GET', "https://raw.githubusercontent.com/Comicao1/veracruzweb/main/changelog.txt")
+        xhr.send()
+        console.log(xhr)
+    }
+    reqData();
+    
+</script>
 
 </body></html>
