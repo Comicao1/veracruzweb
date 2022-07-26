@@ -10,6 +10,58 @@
       <meta content="#eb4034" data-react-helmet="true" name="theme-color" />
       <link rel="icon" type="image/x-icon" href="favicon.png">
    </head>
+   <style>
+img { 
+  opacity: 0.5; 
+  border: 2px solid #ffffff;
+  padding: 5px; 
+  -webkit-filter: blur(5px);
+  filter: blur(5px); 
+  transition: 0.3s;
+} 
+
+img:hover { 
+  opacity: 1;
+  -webkit-filter: blur(0px);
+    filter: blur(0px); 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 25px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.vini {
+  position: absolute;
+  top: 78%;
+  left: 42%;
+  transform: translate(-30%, -20%);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+}
+.thux {
+  position: absolute;
+  top: 78%;
+  left: 56.7%;
+  transform: translate(-30%, -20%);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+</style>
    <body>
         <div id="container">
                 <div id="header">
@@ -20,7 +72,6 @@
                                 <li><a href="https://www.byond.com/games/ThuxTK/Veracruz">hub</a></li>
                                 <!-- <li><a href="index.html">wiki</a></li> !-->
                                 <li><a href="https://discord.gg/rvuJ2Hcv93">discord</a></li>
-				<li><a href="devs.html">about</a></li>
                                 <li><br></li><li>
                                 </li><li><br></li>
                         </ul>
@@ -28,39 +79,22 @@
                 </div>
                 <div id="content">
                         <h3>VeraCruz</h3>
-                        <h4>Sua experiência macabra neocolonial.</h4>
+                        <h4>Os Pais Fundadores.</h4>
                         <br>
-                        <p>Em breve disponibilizaremos o download do launcher e o sistema de registro aqui, ainda é necessário o uso do launcher da BYOND.</p>
-                        <br>
-                        <p>byond://20.206.83.49:1984</p>
+                        <p>Um projeto de um RPG sombrio totalmente brasileiro com elementos coloniais, futuristas e medievais na terra de Veracruz, com grandes referências à períodos relevantes da história Brasileira. O projeto é feito por uma dupla de desenvolvedores independentes que serão apresentados abaixo.</p>
                 </div>
-                <div id="content">
-                        <h3>Changelog</h3>
-                        <p id="output"></p>
-                </div>
+		<div class="row">
+			<div class="column">
+			<img src="vini.png" width=100%>
+			<div class="vini">Comicao1</div>
+			</div>
+			<div class="column">
+			<img src="aguirre.png" width=100%>
+			<div class="thux">ThuxTK</div>
+			</div>
+		</div>
                 <div id="footer">
                         <p>©2022 VeraCruz Team</p>
                 </div>
         </div>
-   
-
-<script>
-    function changeHtml(data){
-        var str;
-        str = this.responseText;
-        str = str.replace(/(\r\n|\n|\r)/gm,"<br>")
-        document.getElementById('output').innerHTML = str;
-    }
-    
-    async function reqData(){
-        const xhr = new XMLHttpRequest()
-        xhr.addEventListener('load', changeHtml)
-        xhr.open('GET', "https://raw.githubusercontent.com/Comicao1/veracruzweb/main/changelog.txt")
-        xhr.send()
-        console.log(xhr)
-    }
-    reqData();
-    
-</script>
-
 </body></html>
